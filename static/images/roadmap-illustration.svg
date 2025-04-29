@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Elements -->
+    <circle cx="400" cy="300" r="250" fill="#1a1a1a" opacity="0.1"/>
+    
+    <!-- Main Road Path -->
+    <path d="M200 500 C 300 500, 350 400, 400 300 C 450 200, 500 100, 600 100" 
+          stroke="#ff0000" 
+          stroke-width="8" 
+          fill="none"
+          stroke-dasharray="15,15"/>
+    
+    <!-- Milestone Points -->
+    <circle cx="200" cy="500" r="20" fill="#ff0000"/>
+    <circle cx="350" cy="400" r="20" fill="#ff0000"/>
+    <circle cx="400" cy="300" r="20" fill="#ff0000"/>
+    <circle cx="500" cy="200" r="20" fill="#ff0000"/>
+    <circle cx="600" cy="100" r="20" fill="#ff0000"/>
+    
+    <!-- Milestone Labels -->
+    <rect x="180" y="460" width="80" height="30" rx="5" fill="#1a1a1a"/>
+    <rect x="330" y="360" width="80" height="30" rx="5" fill="#1a1a1a"/>
+    <rect x="380" y="260" width="80" height="30" rx="5" fill="#1a1a1a"/>
+    <rect x="480" y="160" width="80" height="30" rx="5" fill="#1a1a1a"/>
+    <rect x="580" y="60" width="80" height="30" rx="5" fill="#1a1a1a"/>
+    
+    <!-- Decorative Elements -->
+    <g class="floating-elements">
+        <!-- Code Symbols -->
+        <path d="M250 200 L270 220 L250 240" stroke="#ff0000" stroke-width="2" opacity="0.5"/>
+        <path d="M290 200 L270 220 L290 240" stroke="#ff0000" stroke-width="2" opacity="0.5"/>
+        
+        <!-- Database Symbol -->
+        <path d="M500 400 C 500 390, 550 390, 550 400 C 550 410, 500 410, 500 400" 
+              stroke="#ff0000" 
+              stroke-width="2" 
+              fill="none" 
+              opacity="0.5"/>
+        
+        <!-- Server Symbol -->
+        <rect x="150" y="350" width="30" height="40" stroke="#ff0000" stroke-width="2" fill="none" opacity="0.5"/>
+        <line x1="160" y1="360" x2="170" y2="360" stroke="#ff0000" stroke-width="2" opacity="0.5"/>
+        <line x1="160" y1="370" x2="170" y2="370" stroke="#ff0000" stroke-width="2" opacity="0.5"/>
+    </g>
+    
+    <!-- Floating Shapes -->
+    <circle cx="150" cy="150" r="30" fill="#ff0000" opacity="0.1"/>
+    <circle cx="650" cy="450" r="40" fill="#ff0000" opacity="0.1"/>
+    <rect x="550" y="300" width="20" height="20" rx="5" fill="#ff0000" opacity="0.2"/>
+    <circle cx="250" cy="400" r="15" fill="#ff0000" opacity="0.2"/>
+    
+    <!-- Abstract Lines -->
+    <path d="M100 300 Q 150 200 200 300" stroke="#ff0000" stroke-width="2" opacity="0.3"/>
+    <path d="M600 200 Q 650 300 700 200" stroke="#ff0000" stroke-width="2" opacity="0.3"/>
+</svg>

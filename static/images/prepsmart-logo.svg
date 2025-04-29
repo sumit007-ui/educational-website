@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Book Icon -->
+    <path d="M10 8C10 6 12 5 15 5H35C38 5 40 6 40 8V32C40 34 38 35 35 35H15C12 35 10 34 10 32V8Z" fill="#ff3333"/>
+    <path d="M15 12H35M15 18H35M15 24H25" stroke="white" stroke-width="2"/>
+    
+    <!-- Text PrepSmart -->
+    <text x="50" y="27" font-family="Arial, sans-serif" font-weight="bold" font-size="24" fill="white">
+        Prep<tspan fill="#ff3333">Smart</tspan>
+    </text>
+    
+    <!-- Graduation Cap -->
+    <path d="M25 5L35 10L25 15L15 10L25 5Z" fill="white"/>
+    <path d="M20 12V18" stroke="white" stroke-width="2"/>
+    <circle cx="20" cy="19" r="2" fill="white"/>
+</svg>

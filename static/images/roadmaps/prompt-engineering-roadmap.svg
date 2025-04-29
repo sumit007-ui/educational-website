@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="100" cy="100" r="90" fill="#1a1a1a"/>
+    
+    <!-- AI Brain -->
+    <path d="M70 80C70 60 130 60 130 80C130 100 70 100 70 80Z" fill="#ff3333"/>
+    <path d="M70 120C70 100 130 100 130 120C130 140 70 140 70 120Z" fill="#ff3333"/>
+    
+    <!-- Connection Lines -->
+    <path d="M85 90L115 110M85 110L115 90" stroke="white" stroke-width="3"/>
+    
+    <!-- Text Bubbles -->
+    <circle cx="60" cy="70" r="10" fill="white"/>
+    <circle cx="140" cy="70" r="10" fill="white"/>
+    <circle cx="60" cy="130" r="10" fill="white"/>
+    <circle cx="140" cy="130" r="10" fill="white"/>
+</svg>

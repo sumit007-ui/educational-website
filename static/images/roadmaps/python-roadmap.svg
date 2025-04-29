@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="100" cy="100" r="90" fill="#1a1a1a"/>
+    
+    <!-- Python Logo -->
+    <path d="M70 80C70 60 130 60 130 80L130 120C130 140 70 140 70 120L70 80Z" fill="#ff3333"/>
+    <circle cx="85" cy="70" r="5" fill="white"/>
+    <circle cx="115" cy="130" r="5" fill="white"/>
+    
+    <!-- Code Lines -->
+    <path d="M50 90L150 90" stroke="white" stroke-width="3"/>
+    <path d="M60 100L140 100" stroke="white" stroke-width="3"/>
+    <path d="M70 110L130 110" stroke="white" stroke-width="3"/>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="100" cy="100" r="90" fill="#E3F2FD"/>
+    
+    <!-- Code Brackets -->
+    <path d="M70 80L50 100L70 120" stroke="#2196F3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M130 80L150 100L130 120" stroke="#2196F3" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Slash -->
+    <path d="M110 70L90 130" stroke="#2196F3" stroke-width="8" stroke-linecap="round"/>
+</svg>

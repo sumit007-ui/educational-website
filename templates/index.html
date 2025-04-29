@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> | Your Gateway to Exam Success</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .text-primary {
+            color: #2196F3;
+        }
+        .bg-primary {
+            background-color: #2196F3;
+        }
+        .btn-primary {
+            background-color: #2196F3;
+            border-color: #2196F3;
+        }
+        .btn-primary:hover {
+            background-color: #1976D2;
+            border-color: #1976D2;
+        }
+        .hero-section {
+            background-color: #000;
+            color: #fff;
+        }
+        .hero-section h1 {
+            color: #fff;
+        }
+        .hero-section p {
+            color: #fff;
+        }
+        .features-section {
+            background-color: #f7f7f7;
+        }
+        .features-section h2 {
+            color: #333;
+        }
+        .features-section p {
+            color: #666;
+        }
+        .about-section {
+            background-color: #000;
+            color: #fff;
+        }
+        .about-section h2 {
+            color: #fff;
+        }
+        .about-section p {
+            color: #fff;
+        }
+        .courses-section {
+            background-color: #f7f7f7;
+        }
+        .courses-section h2 {
+            color: #333;
+        }
+        .courses-section p {
+            color: #666;
+        }
+        .roadmap-section {
+            background-color: #000;
+            color: #fff;
+        }
+        .roadmap-section h2 {
+            color: #fff;
+        }
+        .roadmap-section p {
+            color: #fff;
+        }
+        .resume-section {
+            background-color: #f7f7f7;
+        }
+        .resume-section h2 {
+            color: #333;
+        }
+        .resume-section p {
+            color: #666;
+        }
+        .practice-section {
+            background-color: #000;
+            color: #fff;
+            padding: 80px 0;
+        }
+        .practice-section h2 {
+            color: #fff;
+        }
+        .practice-section p {
+            color: #fff;
+        }
+        .contact-section {
+            background: linear-gradient(135deg, #1a237e, #0d47a1, #01579b);
+            color: #fff;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        .contact-section h2 {
+            color: #fff;
+            position: relative;
+        }
+        .contact-section p {
+            color: rgba(255, 255, 255, 0.9);
+            position: relative;
+        }
+        .contact-info .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #64b5f6;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+        .contact-info .contact-icon:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: scale(1.1);
+            color: #90caf9;
+        }
+        .social-link {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #64b5f6;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+        .social-link:hover {
+            background: #64b5f6;
+            color: #fff;
+            transform: translateY(-3px);
+            border-color: #64b5f6;
+        }
+        .contact-form-wrapper {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form {
+            background: transparent;
+        }
+        .contact-form .form-control,
+        .contact-form .form-select {
+            background: rgba(255, 255, 255, 0.1) !important;
+            border: 1px solid rgba(255, 255, 255, 0.2) !important;
+            color: #fff !important;
+            padding: 0.8rem 1.2rem;
+            transition: all 0.3s ease;
+        }
+        .contact-form .form-control:focus,
+        .contact-form .form-select:focus {
+            background: rgba(255, 255, 255, 0.15) !important;
+            border-color: #64b5f6 !important;
+            box-shadow: 0 0 0 0.25rem rgba(100, 181, 246, 0.25);
+        }
+        .contact-form .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .contact-form .form-label {
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 500;
+        }
+        .contact-form .btn-primary {
+            padding: 0.8rem 2rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            background: linear-gradient(45deg, #42a5f5, #64b5f6);
+            border: none;
+            transition: all 0.3s ease;
+        }
+        .contact-form .btn-primary:hover {
+            background: linear-gradient(45deg, #64b5f6, #42a5f5);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(100, 181, 246, 0.4);
+        }
+        .interview-section {
+            background-color: #000;
+            color: #fff;
+            padding: 80px 0;
+        }
+        .interview-section h2,
+        .interview-section .card-title {
+            color: #fff;
+        }
+        .interview-section p {
+            color: #ccc;
+        }
+        .interview-card .card {
+            background-color: #1a1a1a;
+            border: none;
+            transition: transform 0.3s ease;
+        }
+        .interview-card .card:hover {
+            transform: translateY(-5px);
+        }
+        .interview-card .btn-primary {
+            background-color: #ff3333;
+            border-color: #ff3333;
+        }
+        .interview-card .btn-primary:hover {
+            background-color: #cc0000;
+            border-color: #cc0000;
+        }
+        .interview-icon {
+            display: inline-block;
+            padding: 15px;
+            border-radius: 50%;
+            background: rgba(33, 150, 243, 0.1);
+        }
+        .template-card .card,
+        .roadmap-card .card {
+            background-color: #1a1a1a;
+            border: none;
+            transition: transform 0.3s ease;
+        }
+        
+        .template-card .card:hover,
+        .roadmap-card .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .template-card .card-body,
+        .roadmap-card .card-body {
+            color: white;
+        }
+        
+        .template-card .card-title,
+        .roadmap-card .card-title {
+            color: white;
+        }
+        
+        .template-card .text-muted,
+        .roadmap-card .text-muted {
+            color: #cccccc !important;
+        }
+        
+        .template-card .btn-primary,
+        .roadmap-card .btn-primary {
+            background-color: #ff3333;
+            border-color: #ff3333;
+        }
+        
+        .template-card .btn-primary:hover,
+        .roadmap-card .btn-primary:hover {
+            background-color: #cc0000;
+            border-color: #cc0000;
+        }
+        
+        .roadmap-slider {
+            position: relative;
+            overflow: hidden;
+            padding: 0 30px;
+        }
+        
+        .roadmap-slider .slider-container {
+            transition: transform 0.5s ease;
+        }
+        
+        .roadmap-nav-buttons button {
+            background: rgba(255, 51, 51, 0.9);
+            border: none;
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+            pointer-events: auto;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .roadmap-nav-buttons button:hover {
+            background: rgba(204, 0, 0, 0.9);
+            transform: scale(1.1);
+        }
+        
+        .roadmap-nav-buttons button:active {
+            transform: scale(0.95);
+        }
+        
+        .roadmap-slider .dots-container {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 20px;
+        }
+        
+        .roadmap-slider .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #666;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .roadmap-slider .dot.active {
+            background: #ff3333;
+            transform: scale(1.2);
+        }
+        
+        .roadmap-card {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            display: none;
+        }
+        
+        .roadmap-card.active {
+            opacity: 1;
+            display: block;
+        }
+        
+        .roadmap-card .card {
+            transform: translateY(20px);
+            transition: transform 0.5s ease;
+        }
+        
+        .roadmap-card.active .card {
+            transform: translateY(0);
+        }
+        
+        /* Reset navbar styles completely */
+        .navbar {
+            background-color: #1a1a1a !important;
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1030;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar * {
+            color: white !important;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand img {
+            height: 40px;
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .navbar-brand span {
+            color: white !important;
+        }
+
+        .navbar-brand span.highlight {
+            color: #ff3333 !important;
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            padding: 0.5rem 1rem !important;
+            position: relative;
+            transition: color 0.3s ease !important;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: #ff3333 !important;
+        }
+
+        .navbar-toggler {
+            padding: 0.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            background-color: transparent !important;
+        }
+
+        .navbar-toggler:focus {
+            box-shadow: none !important;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+        }
+
+        /* Ensure content starts below navbar */
+        body {
+            padding-top: 76px !important;
+            margin: 0;
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar-collapse {
+                background-color: #1a1a1a !important;
+                padding: 1rem;
+                margin: 0 -1rem;
+            }
+        }
+        
+        .company-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .company-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+        .company-logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            padding: 15px;
+        }
+        .company-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .company-card h4 {
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .company-card p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+        .company-card .btn-outline-light {
+            border-radius: 25px;
+            padding: 8px 25px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        .company-card .btn-outline-light:hover {
+            background: #2196F3;
+            border-color: #2196F3;
+        }
+        .interview-illustration {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+        .interview-illustration img {
+            width: 100%;
+            height: auto;
+            filter: brightness(0) invert(1);
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        .contact-info .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(33, 150, 243, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2196F3;
+            transition: all 0.3s ease;
+        }
+        .contact-info .contact-icon:hover {
+            background: rgba(33, 150, 243, 0.2);
+            transform: scale(1.1);
+        }
+        .social-links {
+            margin-top: 2rem;
+        }
+        .social-link {
+            width: 45px;
+            height: 45px;
+            background: rgba(33, 150, 243, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2196F3;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        .social-link:hover {
+            background: #2196F3;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+        .contact-form-wrapper {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .contact-form {
+            background: transparent;
+        }
+        .contact-form .form-control,
+        .contact-form .form-select {
+            background: rgba(0, 0, 0, 0.2) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            color: #fff !important;
+            padding: 0.8rem 1.2rem;
+            transition: all 0.3s ease;
+        }
+        .contact-form .form-control:focus,
+        .contact-form .form-select:focus {
+            background: rgba(0, 0, 0, 0.3) !important;
+            border-color: #2196F3 !important;
+            box-shadow: 0 0 0 0.25rem rgba(33, 150, 243, 0.25);
+        }
+        .contact-form .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .contact-form .form-label {
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 500;
+        }
+        .contact-form .btn-primary {
+            padding: 0.8rem 2rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            background: linear-gradient(45deg, #1976D2, #2196F3);
+            border: none;
+            transition: all 0.3s ease;
+        }
+        .contact-form .btn-primary:hover {
+            background: linear-gradient(45deg, #2196F3, #1976D2);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(33, 150, 243, 0.3);
+        }
+        .course-image {
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px 10px 0 0;
+            position: relative;
+        }
+        .course-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .course-card:hover .course-image img {
+            transform: scale(1.1);
+        }
+        .course-content {
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/static/images/prepsmart-logo.svg" alt="PrepSmart Logo">
+                <span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#roadmaps">Roadmaps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#interviews">Interviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                    {% if current_user.is_authenticated %}
+                    <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+                    </li>
+                    {% else %}
+                    <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('register') }}">Register</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>                 
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <h1 class="display-4 fw-bold mb-4">Your Path to Tech Career Success</h1>
+                        <p class="lead mb-4">Unlock your potential with our comprehensive programming tutorials, career roadmaps, and expert resources. Start your journey to becoming a successful developer today.</p>
+                        <div class="hero-btns">
+                            <button class="btn btn-primary rounded-pill me-3">
+                                Start Learning <i class="fas fa-code ms-2"></i>
+                            </button>
+                            <button class="btn btn-outline-light rounded-pill">
+                                View Roadmaps <i class="fas fa-map ms-2"></i>
+                            </button>
+                        </div>
+                        <div class="hero-stats mt-5">
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <h2 class="fw-bold">10+</h2>
+                                    <p>Learning Paths</p>
+                                </div>
+                                <div class="col-4">
+                                    <h2 class="fw-bold">100+</h2>
+                                    <p>Tutorials</p>
+                                </div>
+                                <div class="col-4">
+                                    <h2 class="fw-bold">24/7</h2>
+                                    <p>Support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-illustration floating">
+                        <img src="/static/images/hero-illustration.svg" alt="Learning Illustration" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">Why Choose Our Platform</h2>
+                <p class="lead">Discover why developers trust us for their learning journey</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Practical Learning</h3>
+                        <p>Learn by doing with hands-on coding exercises and real-world projects that build your portfolio</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card active">
+                        <div class="feature-icon">
+                            <i class="fas fa-map-signs"></i>
+                        </div>
+                        <h3>Clear Career Paths</h3>
+                        <p>Follow structured learning paths designed by industry experts to reach your career goals</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Community Support</h3>
+                        <p>Join our active community of learners and mentors for guidance and collaboration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-content">
+                        <h2 class="display-5 fw-bold mb-4">Transform Your Career</h2>
+                        <p class="lead mb-4">Join thousands of successful graduates who have transformed their careers through our comprehensive learning programs and expert mentorship.</p>
+                        <div class="d-flex gap-4 mb-4">
+                            <div>
+                                <i class="fas fa-check-circle text-primary mb-2 fs-3"></i>
+                                <h4 class="mt-2">Industry Experts</h4>
+                                <p>Learn from professionals with years of experience</p>
+                            </div>
+                            <div>
+                                <i class="fas fa-check-circle text-primary mb-2 fs-3"></i>
+                                <h4 class="mt-2">Job Ready</h4>
+                                <p>Build a portfolio with real-world projects</p>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary rounded-pill btn-lg">
+                            Start Learning <i class="fas fa-arrow-right ms-2"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-illustration floating">
+                        <img src="/static/images/about-illustration.svg" alt="About Us Illustration" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="courses-illustration floating">
+                        <img src="/static/./images/courses-illustration.svg" alt="Courses Illustration" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="text-start">
+                        <h2 class="display-5 fw-bold mb-3">Featured Programming Courses</h2>
+                        <p class="lead">Start your coding journey with our comprehensive video tutorials</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&auto=format&fit=crop&q=80" alt="Full Stack Development">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-tag">Most Popular</span>
+                            <h3>Full Stack Development</h3>
+                            <p>Master modern web development with MERN stack (MongoDB, Express.js, React, Node.js)</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <i class="fas fa-user-graduate text-primary me-2"></i>
+                                    <span>15,000+ Students</span>
+                                </div>
+                                <a href="https://youtu.be/HVjjoMvutj4?si=TjxjZdP_z6grfs42" target="_blank" class="btn btn-primary youtube-btn">
+                                    <i class="fab fa-youtube me-2"></i>Watch Video
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1527474305487-b87b222841cc?w=800&auto=format&fit=crop&q=80" alt="Data Science & AI">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-tag">Hot</span>
+                            <h3>Data Science & AI</h3>
+                            <p>Learn data analysis, ML, and artificial intelligence</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <i class="fas fa-user-graduate text-primary me-2"></i>
+                                    <span>12,000+ Students</span>
+                                </div>
+                                <a href="https://youtu.be/-ETQ97mXXF0?si=an7jByLFz2JilQzC" target="_blank" class="btn btn-primary youtube-btn">
+                                    <i class="fab fa-youtube me-2"></i>Watch Video
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800&auto=format&fit=crop&q=80" alt="Cyber Security">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-tag">New</span>
+                            <h3>Cyber Security</h3>
+                            <p>Master network security and ethical hacking</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <i class="fas fa-user-graduate text-primary me-2"></i>
+                                    <span>8,000+ Students</span>
+                                </div>
+                                <a href="https://youtu.be/v3iUx2SNspY?si=jqCTjMtMzf_6KvTY" target="_blank" class="btn btn-primary youtube-btn">
+                                    <i class="fab fa-youtube me-2"></i>Watch Video
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop&q=80" alt="Cloud Computing">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-tag">Trending</span>
+                            <h3>Cloud Computing</h3>
+                            <p>Master AWS, Azure, and Google Cloud platforms</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <i class="fas fa-user-graduate text-primary me-2"></i>
+                                    <span>10,000+ Students</span>
+                                </div>
+                                <a href="https://www.youtube.com/live/9J44HhOVArc?si=ZSRnQh_DVCkInXze" target="_blank" class="btn btn-primary youtube-btn">
+                                    <i class="fab fa-youtube me-2"></i>Watch Video
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop&q=80" alt="Blockchain Development">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-tag">High Demand</span>
+                            <h3>Blockchain Development</h3>
+                            <p>Learn Web3, Smart Contracts, and DApp development</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <i class="fas fa-user-graduate text-primary me-2"></i>
+                                    <span>7,500+ Students</span>
+                                </div>
+                                <a href="https://www.youtube.com/watch?v=EN4fEbcFZ_E?si=2Go-1rrVLU4RqDhf" target="_blank" class="btn btn-primary youtube-btn">
+                                    <i class="fab fa-youtube me-2"></i>Watch Video
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?w=800&auto=format&fit=crop&q=80" alt="Mobile App Development">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-tag">Popular</span>
+                            <h3>Mobile App Development</h3>
+                            <p>Build iOS and Android apps with Flutter & React Native</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <i class="fas fa-user-graduate text-primary me-2"></i>
+                                    <span>9,000+ Students</span>
+                                </div>
+                                <a href="https://www.youtube.com/live/BU_afT-aIn0?si=Nobo8c8OO4-cVfvj" target="_blank" class="btn btn-primary youtube-btn">
+                                    <i class="fab fa-youtube me-2"></i>Watch Video
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&auto=format&fit=crop&q=80" alt="DevOps Engineering">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-tag">In Demand</span>
+                            <h3>DevOps Engineering</h3>
+                            <p>Master CI/CD, Docker, Kubernetes, and automation</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <i class="fas fa-user-graduate text-primary me-2"></i>
+                                    <span>11,000+ Students</span>
+                                </div>
+                                <a href="https://www.youtube.com/live/9J44HhOVArc?si=ZSRnQh_DVCkInXze" target="_blank" class="btn btn-primary youtube-btn">
+                                    <i class="fab fa-youtube me-2"></i>Watch Video
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&auto=format&fit=crop&q=80" alt="UI/UX Design">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-tag">Essential</span>
+                            <h3>UI/UX Design</h3>
+                            <p>Learn modern design with Figma and design systems</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <i class="fas fa-user-graduate text-primary me-2"></i>
+                                    <span>8,500+ Students</span>
+                                </div>
+                                <a href="https://www.youtube.com/live/BU_afT-aIn0?si=Nobo8c8OO4-cVfvj" target="_blank" class="btn btn-primary youtube-btn">
+                                    <i class="fab fa-youtube me-2"></i>Watch Video
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&auto=format&fit=crop&q=80" alt="MLOps Engineering">
+                        </div>
+                        <div class="course-content">
+                            <span class="course-tag">Future Ready</span>
+                            <h3>MLOps Engineering</h3>
+                            <p>Learn ML model deployment, monitoring, and scaling</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <div>
+                                    <i class="fas fa-user-graduate text-primary me-2"></i>
+                                    <span>6,500+ Students</span>
+                                </div>
+                                <a href="https://youtu.be/LvC68w9JS4Y?si=_r449DfowzeTL8F1" target="_blank" class="btn btn-primary youtube-btn">
+                                    <i class="fab fa-youtube me-2"></i>Watch Video
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Roadmaps Section -->
+    <section id="roadmaps" class="roadmap-section py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">Career Roadmaps</h2>
+                <p class="lead">Download comprehensive career roadmaps to guide your journey</p>
+            </div>
+            <div class="roadmap-slider position-relative">
+                <div class="roadmap-nav-buttons">
+                    <button class="prev-button" onclick="prevRoadmap()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="next-button" onclick="nextRoadmap()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="slider-container">
+                    <div class="roadmap-card active" data-aos="fade-up">
+                        <div class="card shadow">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center gap-4">
+                                        <div class="roadmap-icon">
+                                            <img src="/static/images/roadmaps/fullstack-roadmap.svg" alt="Full Stack Development Roadmap" class="img-fluid" style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div>
+                                            <h4 class="card-title mb-2">Full Stack Development</h4>
+                                            <p class="card-text mb-0 text-muted">Complete guide to becoming a Full Stack Developer</p>
+                                        </div>
+                                    </div>
+                                    <a href="/static/pdf/full-stack.pdf" class="btn btn-primary" download>
+                                        <i class="fas fa-download me-2"></i>Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="roadmap-card" data-aos="fade-up">
+                        <div class="card shadow">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center gap-4">
+                                        <div class="roadmap-icon">
+                                            <img src="/static/images/roadmaps/cybersecurity-roadmap.svg" alt="Cyber Security Roadmap" class="img-fluid" style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div>
+                                            <h4 class="card-title mb-2">Cyber Security</h4>
+                                            <p class="card-text mb-0 text-muted">Path to becoming a Cybersecurity Professional</p>
+                                        </div>
+                                    </div>
+                                    <a href="/static/pdf/cyber-security.pdf" class="btn btn-primary" download>
+                                        <i class="fas fa-download me-2"></i>Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="roadmap-card" data-aos="fade-up">
+                        <div class="card shadow">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center gap-4">
+                                        <div class="roadmap-icon">
+                                            <img src="/static/images/roadmaps/data-analyst-roadmap.svg" alt="Data Analysis Roadmap" class="img-fluid" style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div>
+                                            <h4 class="card-title mb-2">Data Analysis</h4>
+                                            <p class="card-text mb-0 text-muted">Guide to becoming a Data Analyst</p>
+                                        </div>
+                                    </div>
+                                    <a href="/static/pdf/data-analyst.pdf" class="btn btn-primary" download>
+                                        <i class="fas fa-download me-2"></i>Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="roadmap-card" data-aos="fade-up">
+                        <div class="card shadow">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center gap-4">
+                                        <div class="roadmap-icon">
+                                            <img src="/static/images/roadmaps/git-roadmap.svg" alt="Git & GitHub Roadmap" class="img-fluid" style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div>
+                                            <h4 class="card-title mb-2">Git & GitHub</h4>
+                                            <p class="card-text mb-0 text-muted">Master version control and collaboration</p>
+                                        </div>
+                                    </div>
+                                    <a href="/static/pdf/git-github.pdf" class="btn btn-primary" download>
+                                        <i class="fas fa-download me-2"></i>Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="roadmap-card" data-aos="fade-up">
+                        <div class="card shadow">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center gap-4">
+                                        <div class="roadmap-icon">
+                                            <img src="/static/images/roadmaps/prompt-engineering-roadmap.svg" alt="Prompt Engineering Roadmap" class="img-fluid" style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div>
+                                            <h4 class="card-title mb-2">Prompt Engineering</h4>
+                                            <p class="card-text mb-0 text-muted">Learn to craft effective AI prompts</p>
+                                        </div>
+                                    </div>
+                                    <a href="/static/pdf/prompt-engineering.pdf" class="btn btn-primary" download>
+                                        <i class="fas fa-download me-2"></i>Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="roadmap-card" data-aos="fade-up">
+                        <div class="card shadow">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center gap-4">
+                                        <div class="roadmap-icon">
+                                            <img src="/static/images/roadmaps/python-roadmap.svg" alt="Python Programming Roadmap" class="img-fluid" style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div>
+                                            <h4 class="card-title mb-2">Python Programming</h4>
+                                            <p class="card-text mb-0 text-muted">Complete Python development guide</p>
+                                        </div>
+                                    </div>
+                                    <a href="/static/pdf/python.pdf" class="btn btn-primary" download>
+                                        <i class="fas fa-download me-2"></i>Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="roadmap-card" data-aos="fade-up">
+                        <div class="card shadow">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center gap-4">
+                                        <div class="roadmap-icon">
+                                            <img src="/static/images/roadmaps/frontend-roadmap.svg" alt="Frontend Developer Roadmap" class="img-fluid" style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div>
+                                            <h4 class="card-title mb-2">Frontend Developer Roadmap</h4>
+                                            <p class="card-text mb-0 text-muted">Master modern frontend development</p>
+                                        </div>
+                                    </div>
+                                    <a href="/static/pdf/frontend-developer-roadmap.pdf" class="btn btn-primary" download>
+                                        <i class="fas fa-download me-2"></i>Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="roadmap-card" data-aos="fade-up">
+                        <div class="card shadow">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center gap-4">
+                                        <div class="roadmap-icon">
+                                            <img src="/static/images/roadmaps/backend-roadmap.svg" alt="Backend Developer Roadmap" class="img-fluid" style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div>
+                                            <h4 class="card-title mb-2">Backend Developer Roadmap</h4>
+                                            <p class="card-text mb-0 text-muted">Learn server-side development</p>
+                                        </div>
+                                    </div>
+                                    <a href="/static/pdf/backend-developer-roadmap.pdf" class="btn btn-primary" download>
+                                        <i class="fas fa-download me-2"></i>Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="roadmap-card" data-aos="fade-up">
+                        <div class="card shadow">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center gap-4">
+                                        <div class="roadmap-icon">
+                                            <img src="/static/images/roadmaps/devops-roadmap.svg" alt="DevOps Roadmap" class="img-fluid" style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div>
+                                            <h4 class="card-title mb-2">DevOps Roadmap</h4>
+                                            <p class="card-text mb-0 text-muted">Explore DevOps practices and tools</p>
+                                        </div>
+                                    </div>
+                                    <a href="/static/pdf/devops-roadmap.pdf" class="btn btn-primary" download>
+                                        <i class="fas fa-download me-2"></i>Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="roadmap-card" data-aos="fade-up">
+                        <div class="card shadow">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center gap-4">
+                                        <div class="roadmap-icon">
+                                            <img src="/static/images/roadmaps/android-roadmap.svg" alt="Android Developer Roadmap" class="img-fluid" style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div>
+                                            <h4 class="card-title mb-2">Android Developer Roadmap</h4>
+                                            <p class="card-text mb-0 text-muted">Build Android applications</p>
+                                        </div>
+                                    </div>
+                                    <a href="/static/pdf/android-developer-roadmap.pdf" class="btn btn-primary" download>
+                                        <i class="fas fa-download me-2"></i>Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dots-container">
+                    <div class="dot active" onclick="goToRoadmap(0)"></div>
+                    <div class="dot" onclick="goToRoadmap(1)"></div>
+                    <div class="dot" onclick="goToRoadmap(2)"></div>
+                    <div class="dot" onclick="goToRoadmap(3)"></div>
+                    <div class="dot" onclick="goToRoadmap(4)"></div>
+                    <div class="dot" onclick="goToRoadmap(5)"></div>
+                    <div class="dot" onclick="goToRoadmap(6)"></div>
+                    <div class="dot" onclick="goToRoadmap(7)"></div>
+                    <div class="dot" onclick="goToRoadmap(8)"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Templates Section -->
+    <section id="resume" class="resume-section py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold mb-3">Resume Templates</h2>
+                <p class="lead">Download professional resume templates for different roles</p>
+            </div>
+            <div class="d-flex flex-column gap-4">
+                <div data-aos="fade-up">
+                    <div class="template-card">
+                        <div class="card shadow">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center gap-4">
+                                        <div class="template-icon">
+                                            <img src="/static/images/resume-templates/web-dev-resume.svg" alt="Web Developer Resume" class="img-fluid" style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div>
+                                            <h4 class="card-title mb-2">Web Developer Resume</h4>
+                                            <p class="card-text mb-0 text-muted">Modern template for web developers</p>
+                                        </div>
+                                    </div>
+                                    <a href="/static/resume/Web-Developer-Editable-Resume-Template-Download-in-docx-2.docx" class="btn btn-primary" download>
+                                        <i class="fas fa-download me-2"></i>Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="template-card">
+                        <div class="card shadow">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center gap-4">
+                                        <div class="template-icon">
+                                            <img src="/static/images/resume-templates/ux-design-resume.svg" alt="UX Designer Resume" class="img-fluid" style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div>
+                                            <h4 class="card-title mb-2">UX Designer Resume</h4>
+                                            <p class="card-text mb-0 text-muted">Creative template for designers</p>
+                                        </div>
+                                    </div>
+                                    <a href="/static/resume/Ux-Designer-Editable-Resume-Template-Download-in-docx-1.doc " class="btn btn-primary" download>
+                                        <i class="fas fa-download me-2"></i>Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div class="template-card">
+                        <div class="card shadow">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center gap-4">
+                                        <div class="template-icon">
+                                            <img src="/static/images/resume-templates/data-science-resume.svg" alt="Data Scientist Resume" class="img-fluid" style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div>
+                                            <h4 class="card-title mb-2">Data Scientist Resume</h4>
+                                            <p class="card-text mb-0 text-muted">Professional template for data roles</p>
+                                        </div>
+                                    </div>
+                                    <a href="\static\resume\Data-Analyst-Editable-Resume-Template-Download-in-docx-1.docx" class="btn btn-primary" download>
+                                        <i class="fas fa-download me-2"></i>Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <div class="template-card">
+                        <div class="card shadow">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center gap-4">
+                                        <div class="template-icon">
+                                            <img src="/static/images/resume-templates/software-engineer-resume.svg" alt="Software Engineer Resume" class="img-fluid" style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div>
+                                            <h4 class="card-title mb-2">Software Engineer Resume</h4>
+                                            <p class="card-text mb-0 text-muted">Professional template for software engineers</p>
+                                        </div>
+                                    </div>
+                                    <a href="/static/resume/Software-Engineer-Editable-Resume-Template-Download-in-docx.docx" class="btn btn-primary" download>
+                                        <i class="fas fa-download me-2"></i>Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <div class="template-card">
+                        <div class="card shadow">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center gap-4">
+                                        <div class="template-icon">
+                                            <img src="/static/images/resume-templates/product-manager-resume.svg" alt="Product Manager Resume" class="img-fluid" style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div>
+                                            <h4 class="card-title mb-2">Product Manager Resume</h4>
+                                            <p class="card-text mb-0 text-muted">Strategic template for product managers</p>
+                                        </div>
+                                    </div>
+                                    <a href="/static/resume/Product-Manager-Editable-Resume-Template-Download-in-docx.docx" class="btn btn-primary" download>
+                                        <i class="fas fa-download me-2"></i>Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="500">
+                    <div class="template-card">
+                        <div class="card shadow">
+                            <div class="card-body p-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center gap-4">
+                                        <div class="template-icon">
+                                            <img src="/static/images/resume-templates/fresher-resume.svg" alt="Fresher Resume" class="img-fluid" style="width: 80px; height: 80px;">
+                                        </div>
+                                        <div>
+                                            <h4 class="card-title mb-2">Fresher Resume</h4>
+                                            <p class="card-text mb-0 text-muted">Perfect template for recent graduates</p>
+                                        </div>
+                                    </div>
+                                    <a href="\static\resume\Fresher-Resume-Format-1.docx" class="btn btn-primary" download>
+                                        <i class="fas fa-download me-2"></i>Download
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Questions Section -->
+    <section id="questions" class="practice-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="text-start mb-5">
+                        <h2 class="display-5 fw-bold mb-3">Interview Preparation</h2>
+                        <p class="lead">Master technical interviews with our company-specific question banks</p>
+                    </div>
+                    <div class="company-cards">
+                        <div class="row g-4">
+                            <div class="col-md-6" data-aos="fade-up">
+                                <div class="company-card">
+                                    <div class="company-logo">
+                                        <img src="/static/images/tcs-logo.png" alt="TCS">
+                                    </div>
+                                    <h4>TCS Interview Prep</h4>
+                                    <p>500+ Questions</p>
+                                    <a href="#" class="btn btn-outline-light">Practice Now</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                                <div class="company-card">
+                                    <div class="company-logo">
+                                        <img src="/static/images/accenture-logo.png" alt="Accenture">
+                                    </div>
+                                    <h4>Accenture Interview Prep</h4>
+                                    <p>400+ Questions</p>
+                                    <a href="#" class="btn btn-outline-light">Practice Now</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                                <div class="company-card">
+                                    <div class="company-logo">
+                                        <img src="/static/images/capgemini-logo.png" alt="Capgemini">
+                                    </div>
+                                    <h4>Capgemini Interview Prep</h4>
+                                    <p>450+ Questions</p>
+                                    <a href="#" class="btn btn-outline-light">Practice Now</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                                <div class="company-card">
+                                    <div class="company-logo">
+                                        <img src="/static/images/infosys-logo.png" alt="Infosys">
+                                    </div>
+                                    <h4>Infosys Interview Prep</h4>
+                                    <p>350+ Questions</p>
+                                    <a href="#" class="btn btn-outline-light">Practice Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="interview-illustration floating">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1534/1534959.png" alt="Interview Preparation" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enrollment Modal -->
+    <div class="modal fade" id="enrollmentModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title">Start Your Journey</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="enrollmentForm" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                <label for="name">Your Name</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                                <label for="email">Email Address</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <select class="form-select" id="course" required>
+                                    <option value="">Select a course</option>
+                                    <option value="web">Web Development</option>
+                                    <option value="data">Data Science</option>
+                                    <option value="cyber">Cyber Security</option>
+                                    <option value="ai">AI & Machine Learning</option>
+                                </select>
+                                <label for="course">Choose Your Path</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 rounded-pill">
+                            Begin Your Journey <i class="fas fa-arrow-right ms-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/static/js/main.js"></script>
+    <script>
+        // Roadmap Slider functionality
+        let currentRoadmap = 0;
+        const roadmaps = document.querySelectorAll('.roadmap-card');
+        const dots = document.querySelectorAll('.roadmap-slider .dot');
+        let autoSlideInterval;
+        
+        function showRoadmap(index) {
+            roadmaps.forEach(roadmap => roadmap.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            roadmaps[index].classList.add('active');
+            dots[index].classList.add('active');
+        }
+        
+        function nextRoadmap() {
+            currentRoadmap = (currentRoadmap + 1) % roadmaps.length;
+            showRoadmap(currentRoadmap);
+            resetAutoSlide();
+        }
+        
+        function prevRoadmap() {
+            currentRoadmap = (currentRoadmap - 1 + roadmaps.length) % roadmaps.length;
+            showRoadmap(currentRoadmap);
+            resetAutoSlide();
+        }
+        
+        function goToRoadmap(index) {
+            currentRoadmap = index;
+            showRoadmap(currentRoadmap);
+            resetAutoSlide();
+        }
+        
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            autoSlideInterval = setInterval(nextRoadmap, 5000);
+        }
+        
+        // Initialize auto-slide
+        resetAutoSlide();
+        
+        // Pause auto-slide when hovering over the slider
+        document.querySelector('.roadmap-slider').addEventListener('mouseenter', () => {
+            clearInterval(autoSlideInterval);
+        });
+        
+        document.querySelector('.roadmap-slider').addEventListener('mouseleave', resetAutoSlide);
+    </script>
+    <script>
+        // Add this to your existing script section
+        document.addEventListener('DOMContentLoaded', function() {
+            // Update active nav link on scroll
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+            function updateActiveNavLink() {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    if (window.pageYOffset >= sectionTop) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').slice(1) === current) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', updateActiveNavLink);
+            updateActiveNavLink();
+        });
+    </script>
+</body>
+</html>

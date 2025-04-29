@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Monitor -->
+    <rect x="200" y="100" width="400" height="300" rx="10" fill="#1a1a1a"/>
+    <rect x="220" y="120" width="360" height="240" fill="#000000"/>
+    
+    <!-- Code Lines -->
+    <rect x="240" y="140" width="200" height="4" rx="2" fill="#ff0000"/>
+    <rect x="240" y="160" width="150" height="4" rx="2" fill="#ff0000" opacity="0.7"/>
+    <rect x="240" y="180" width="180" height="4" rx="2" fill="#ff0000" opacity="0.5"/>
+    <rect x="240" y="200" width="160" height="4" rx="2" fill="#ff0000" opacity="0.8"/>
+    <rect x="240" y="220" width="190" height="4" rx="2" fill="#ff0000" opacity="0.6"/>
+    
+    <!-- Monitor Stand -->
+    <path d="M350 400 L450 400 L420 450 L380 450 Z" fill="#1a1a1a"/>
+    <rect x="370" y="450" width="60" height="10" rx="5" fill="#1a1a1a"/>
+    
+    <!-- Floating Elements -->
+    <g class="floating-elements">
+        <!-- Browser Window -->
+        <rect x="500" y="200" width="120" height="80" rx="5" fill="#1a1a1a"/>
+        <rect x="500" y="200" width="120" height="15" rx="5" fill="#ff0000" opacity="0.8"/>
+        <circle cx="510" cy="207" r="3" fill="#000000"/>
+        <circle cx="520" cy="207" r="3" fill="#000000"/>
+        <circle cx="530" cy="207" r="3" fill="#000000"/>
+    </g>
+    
+    <!-- Terminal Window -->
+    <g class="floating-elements-2">
+        <rect x="180" y="250" width="100" height="70" rx="5" fill="#1a1a1a"/>
+        <rect x="180" y="250" width="100" height="15" rx="5" fill="#ff0000" opacity="0.6"/>
+        <rect x="190" y="275" width="60" height="3" fill="#ff0000" opacity="0.8"/>
+        <rect x="190" y="285" width="40" height="3" fill="#ff0000" opacity="0.7"/>
+        <rect x="190" y="295" width="50" height="3" fill="#ff0000" opacity="0.9"/>
+    </g>
+    
+    <!-- Decorative Circles -->
+    <circle cx="150" cy="150" r="40" fill="#ff0000" opacity="0.1"/>
+    <circle cx="650" cy="350" r="50" fill="#ff0000" opacity="0.1"/>
+    <circle cx="400" cy="500" r="30" fill="#ff0000" opacity="0.1"/>
+    
+    <!-- Abstract Lines -->
+    <path d="M100 200 Q 150 100 200 200" stroke="#ff0000" stroke-width="2" opacity="0.3"/>
+    <path d="M600 300 Q 650 200 700 300" stroke="#ff0000" stroke-width="2" opacity="0.3"/>
+    
+    <!-- Small Decorative Elements -->
+    <rect x="150" y="400" width="20" height="20" rx="4" fill="#ff0000" opacity="0.2"/>
+    <circle cx="650" cy="150" r="15" fill="#ff0000" opacity="0.2"/>
+    <rect x="550" y="450" width="15" height="15" rx="3" fill="#ff0000" opacity="0.2"/>
+</svg>

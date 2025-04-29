@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Elements -->
+    <circle cx="400" cy="300" r="280" fill="#1a1a1a" opacity="0.1"/>
+    
+    <!-- Books Stack -->
+    <path d="M300 400 L500 400 L480 200 L320 200 Z" fill="#1a1a1a"/>
+    <path d="M320 200 L480 200 L470 180 L330 180 Z" fill="#ff0000" opacity="0.8"/>
+    <path d="M330 180 L470 180 L460 160 L340 160 Z" fill="#1a1a1a"/>
+    <path d="M340 160 L460 160 L450 140 L350 140 Z" fill="#ff0000" opacity="0.6"/>
+    
+    <!-- Graduation Cap -->
+    <path d="M380 100 L420 100 L440 120 L360 120 Z" fill="#ff0000"/>
+    <rect x="390" y="80" width="20" height="20" fill="#1a1a1a"/>
+    <path d="M360 120 L440 120 L400 150 Z" fill="#1a1a1a"/>
+    
+    <!-- Certificate -->
+    <rect x="500" y="250" width="120" height="80" rx="5" fill="#1a1a1a"/>
+    <rect x="510" y="260" width="100" height="10" fill="#ff0000" opacity="0.8"/>
+    <rect x="510" y="280" width="80" height="10" fill="#ff0000" opacity="0.6"/>
+    <rect x="510" y="300" width="90" height="10" fill="#ff0000" opacity="0.7"/>
+    
+    <!-- Decorative Elements -->
+    <circle cx="200" cy="200" r="30" fill="#ff0000" opacity="0.1"/>
+    <circle cx="600" cy="400" r="40" fill="#ff0000" opacity="0.1"/>
+    <circle cx="300" cy="500" r="25" fill="#ff0000" opacity="0.1"/>
+    
+    <!-- Abstract Lines -->
+    <path d="M150 300 Q 200 200 250 300" stroke="#ff0000" stroke-width="2" opacity="0.3"/>
+    <path d="M550 200 Q 600 300 650 200" stroke="#ff0000" stroke-width="2" opacity="0.3"/>
+    
+    <!-- Floating Icons -->
+    <g class="floating">
+        <rect x="180" y="350" width="20" height="20" rx="5" fill="#ff0000" opacity="0.2"/>
+        <circle cx="600" cy="250" r="15" fill="#ff0000" opacity="0.2"/>
+        <rect x="250" y="150" width="15" height="15" rx="4" fill="#ff0000" opacity="0.2"/>
+    </g>
+</svg>

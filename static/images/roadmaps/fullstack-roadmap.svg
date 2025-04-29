@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="100" cy="100" r="90" fill="#1a1a1a"/>
+    
+    <!-- Server Icon -->
+    <rect x="70" y="60" width="60" height="80" rx="5" fill="#ff3333"/>
+    <rect x="80" y="70" width="40" height="5" fill="white"/>
+    <rect x="80" y="80" width="40" height="5" fill="white"/>
+    
+    <!-- Connection Lines -->
+    <path d="M100 140L60 180M100 140L140 180" stroke="#ff3333" stroke-width="4"/>
+    
+    <!-- Client Devices -->
+    <rect x="40" y="160" width="40" height="30" rx="3" fill="#ff3333"/>
+    <rect x="120" y="160" width="40" height="30" rx="3" fill="#ff3333"/>
+</svg>
