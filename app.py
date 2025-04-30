@@ -132,6 +132,66 @@ def logout():
     flash('You have been logged out.', 'info')
     return redirect(url_for('index'))
 
+import requests  # Ensure this is installed and added to requirements.txt
+
+@app.route('/free_books', methods=['GET'])
+def free_books():
+    """Render the main Free Books page."""
+    return render_template('free_books.html', title='Free Books')
+@app.route('/free_books_search', methods=['GET'])
+def free_books_search():
+    """Search for free books using an external API."""
+    query = request.args.get('query', '').strip()
+    page = int(request.args.get('page', 1))
+    books = []
+
+    if query:
+        try:
+            # Example API call to Open Library
+            response = requests.get(
+                'https://openlibrary.org/search.json',
+                params={'q': query, 'page': page}
+            )
+            if response.status_code == 200:
+                data = response.json()
+                print(data)  # Debug: Print the API response to the console
+                books = [
+                    {
+                        'title': book.get('title'),
+                        'authors': book.get('author_name', []),
+                        'cover_image': f"http://covers.openlibrary.org/b/id/{book.get('cover_i')}-L.jpg" if book.get('cover_i') else None,
+                        'year': book.get('first_publish_year'),
+                        'source': 'openlibrary',
+                        'download_links': {
+                            'read': f"https://openlibrary.org{book.get('key')}",
+                            'detail': f"https://openlibrary.org{book.get('key')}"
+                        }
+                    }
+                    for book in data.get('docs', [])
+                ]
+            else:
+                flash('Failed to fetch books from the API. Please try again later.', 'danger')
+    
+            if not books:
+                flash(f'No books found matching "{query}". Please try a different search term.', 'warning')
+        except Exception as e:
+            print(f"Error: {e}")  # Debug: Print the exception to the console
+            flash('An error occurred while fetching books. Please try again later.', 'danger')
+
+    return render_template(
+        'free_book_search.html',
+        query=query,
+        books={'books': books, 'count': len(books)}
+    )
+
+
+response = requests.get("https://openlibrary.org/search.json?q=harry+potter&page=1")
+if response.status_code == 200:
+    print(response.json())  # Debug: Print the API response to the console
+else:
+    print("Failed to fetch data from the API.")
+
+
 @app.route('/contact', methods=['GET', 'POST'])
 @login_required
 def contact():

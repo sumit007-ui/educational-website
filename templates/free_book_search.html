@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Free Books Search Results{% endblock %}
+
+{% block content %}
+<h1>Search Results: {{ query }}</h1>
+<a href="{{ url_for('free_books') }}" class="btn btn-outline-primary mb-4">
+    <i class="fas fa-arrow-left"></i> Back to Free Books
+</a>
+
+{% if books.books %}
+    <div class="row">
+        {% for book in books.books %}
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    {% if book.cover_image %}
+                        <img src="{{ book.cover_image }}" class="card-img-top" alt="{{ book.title }}">
+                    {% else %}
+                        <div class="bg-secondary text-white text-center py-5">
+                            <i class="fas fa-book fa-3x"></i>
+                        </div>
+                    {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title">{{ book.title }}</h5>
+                        <p class="card-text">
+                            {% if book.authors %}
+                                {{ book.authors|join(', ') }}
+                            {% else %}
+                                Unknown Author
+                            {% endif %}
+                        </p>
+                        <a href="{{ book.download_links.read }}" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-book-reader"></i> Read Online
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <div class="alert alert-warning">
+        <i class="fas fa-exclamation-triangle"></i> No books found matching "{{ query }}".
+    </div>
+{% endif %}
+{% endblock %}
