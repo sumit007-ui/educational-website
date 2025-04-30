@@ -616,16 +616,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
+                        <a class="nav-link active" href="#home"><i class="fas fa-home me-1"></i>Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
+                        <a class="nav-link" href="#features"><i class="fas fa-star me-1"></i>Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#courses">Courses</a>
+                        <a class="nav-link" href="#courses"><i class="fas fa-graduation-cap me-1"></i><span class="pe-2">Courses</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#roadmaps">Roadmaps</a>
+                        <a class="nav-link" href="#roadmaps"><i class="fas fa-route me-1"></i><span class="pe-2">Roadmaps</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.endpoint == 'free_books' %}active{% endif %}" href="{{ url_for('free_books') }}">
@@ -633,7 +633,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#resume">Resume</a>
+                        <a class="nav-link" href="#resume"><i class="fas fa-file-alt me-1"></i><span class="pe-2">Resume</a>
                     </li>
                     {% if current_user.is_authenticated %}
                     <li class="nav-item">
@@ -1349,69 +1349,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Practice Questions Section -->
-    <section id="questions" class="practice-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="text-start mb-5">
-                        <h2 class="display-5 fw-bold mb-3">Interview Preparation</h2>
-                        <p class="lead">Master technical interviews with our company-specific question banks</p>
-                    </div>
-                    <div class="company-cards">
-                        <div class="row g-4">
-                            <div class="col-md-6" data-aos="fade-up">
-                                <div class="company-card">
-                                    <div class="company-logo">
-                                        <img src="/static/images/tcs-logo.png" alt="TCS">
-                                    </div>
-                                    <h4>TCS Interview Prep</h4>
-                                    <p>500+ Questions</p>
-                                    <a href="#" class="btn btn-outline-light">Practice Now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                                <div class="company-card">
-                                    <div class="company-logo">
-                                        <img src="/static/images/accenture-logo.png" alt="Accenture">
-                                    </div>
-                                    <h4>Accenture Interview Prep</h4>
-                                    <p>400+ Questions</p>
-                                    <a href="#" class="btn btn-outline-light">Practice Now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                                <div class="company-card">
-                                    <div class="company-logo">
-                                        <img src="/static/images/capgemini-logo.png" alt="Capgemini">
-                                    </div>
-                                    <h4>Capgemini Interview Prep</h4>
-                                    <p>450+ Questions</p>
-                                    <a href="#" class="btn btn-outline-light">Practice Now</a>
-                                </div>
-                            </div>
-                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                                <div class="company-card">
-                                    <div class="company-logo">
-                                        <img src="/static/images/infosys-logo.png" alt="Infosys">
-                                    </div>
-                                    <h4>Infosys Interview Prep</h4>
-                                    <p>350+ Questions</p>
-                                    <a href="#" class="btn btn-outline-light">Practice Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="interview-illustration floating">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1534/1534959.png" alt="Interview Preparation" class="img-fluid">
                     </div>
                 </div>
             </div>
