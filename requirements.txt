@@ -8,6 +8,7 @@ python-dotenv==1.0.0
 email-validator==2.1.0.post1
 requests==2.26.0
 psycopg2-binary==2.9.1
+gunicorn==20.1.0 
 
 # to install the above packages, you can use pip with the following command:
 # pip install -r requirements.txt
